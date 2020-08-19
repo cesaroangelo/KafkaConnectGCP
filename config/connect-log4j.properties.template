@@ -1,0 +1,41 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+log4j.rootLogger={{KAFKACONNECT_LOG4J_ROOTLOGGER}}
+
+log4j.appender.stdout={{KAFKACONNECT_LOG4J_APPENDER_STDOUT}}
+log4j.appender.stdout.layout={{KAFKACONNECT_LOG4J_APPENDER_STDOUT_LAYOUT}}
+log4j.appender.stdout.layout.ConversionPattern={{KAFKACONNECT_LOG4J_APPENDER_STDOUT_LAYOUT_CONVERSATIONPATTERN}}
+
+log4j.logger.org.apache.zookeeper={{KAFKACONNECT_LOG4J_LOGGER_ORG_APACHE_ZOOKEEPER}}
+log4j.logger.org.I0Itec.zkclient={{KAFKACONNECT_LOG4J_LOGGER_ORG_I0ITEC_ZKCLIENT}}
+log4j.logger.org.reflections={{KAFKACONNECT_LOG4J_LOGGER_ORG_REFLECTIONS}}
+
+#Kafka Connect appender
+log4j.appender.connectAppender={{KAFKACONNECT_LOG4J_APPENDER_CONNECTAPPENDER}}
+log4j.appender.connectAppender.DatePattern={{KAFKACONNECT_LOG4J_APPENDER_CONNECTAPPENDER_DATEPATTERN}}
+log4j.appender.connectAppender.File={{KAFKACONNECT_LOG4J_APPENDER_CONNECTAPPENDER_FILE}}
+log4j.appender.connectAppender.layout={{KAFKACONNECT_LOG4J_APPENDER_CONNECTAPPENDER_LAYOUT}}
+log4j.appender.connectAppender.layout.ConversionPattern={{KAFKACONNECT_LOG4J_APPENDER_CONNECTAPPENDER_LAYOUT_CONVERSIONPATTERN}}
+
+#Kafka Connect Rest appender
+log4j.appender.kafkaConnectRestAppender={{KAFKACONNECT_LOG4J_APPENDER_KAFKACONNECTRESTAPPENDER}}  
+log4j.appender.kafkaConnectRestAppender.DatePattern={{KAFKACONNECT_LOG4J_APPENDER_KAFKACONNECTRESTAPPENDER_DATEPATTERN}} 
+log4j.appender.kafkaConnectRestAppender.File={{KAFKACONNECT_LOG4J_APPENDER_KAFKACONNECTRESTAPPENDER_FILE}}  
+log4j.appender.kafkaConnectRestAppender.layout={{KAFKACONNECT_LOG4J_APPENDER_KAFKACONNECTRESTAPPENDER_LAYOUT}}
+log4j.appender.kafkaConnectRestAppender.layout.ConversionPattern={{KAFKACONNECT_LOG4J_APPENDER_KAFKACONNECTRESTAPPENDER_LAYOUT_CONVERSATIONPATTERN}}
+
+log4j.logger.org.apache.kafka.connect.runtime.rest={{KAFKACONNECT_LOG4J_LOGGER_ORG_APACHE_KAFKA_CONNECT_RUNTIME_REST}}
+log4j.additivity.org.apache.kafka.connect.runtime.rest={{KAFKACONNECT_LOG4J_ADDITIVITY_ORG_APACHE_KAFKA_CONNECT_RUNTIME_REST}}
